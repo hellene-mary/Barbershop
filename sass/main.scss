@@ -1,6 +1,7 @@
 @import "./base/reset";
 
 @import "./utils/vars";
+@import "./utils/hidden";
 
 @import "./components/container";
 @import "./components/top-text";
@@ -13,3 +14,5 @@
 @import "./layout/about";
 @import "./layout/prices";
 @import "./layout/advantage";
+@import "./layout/masters";
+@import "./layout/gallery";
