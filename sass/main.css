@@ -36,14 +36,6 @@ body {
   list-style: none;
 }
 
-:root {
-  --color-accent: #FF6C00;
-  --title-text-color-dark: #303030;
-  --title-text-color-light: #FFFFFF;
-  --text-color-dark: #555555;
-  --text-color-light: #9DA4BD;
-}
-
 .container {
   width: 100%;
   padding-left: 30px;
@@ -233,4 +225,69 @@ body {
 }
 .prices-item-text:last-child {
   order: 1;
+}
+
+.advantage {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.advantage-top-text {
+  color: #303030;
+}
+
+.advantage-title {
+  color: #303030;
+}
+
+.advantage-bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #555555;
+  margin-bottom: 44px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  padding: 20px;
+  background-color: #F7F7F7;
+  height: 133px;
+  width: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.advantage-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.advantage-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.advantage-item:nth-child(2) {
+  margin-top: 35px;
+}
+.advantage-item:nth-child(3) {
+  margin-top: -35px;
+}
+
+.advantage-item-amount {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-bottom: 6px;
+}
+
+.advantage-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #303030;
 }/*# sourceMappingURL=main.css.map */
