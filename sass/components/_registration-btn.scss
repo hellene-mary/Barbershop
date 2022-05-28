@@ -1,0 +1,14 @@
+
+.registration-btn{
+    min-width: 160px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $top-text-color-dark;
+    background-color: transparent;
+    border: solid 1px $color-accent;
+    border-radius: 25px;
+}

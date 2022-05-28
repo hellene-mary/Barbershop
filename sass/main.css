@@ -64,6 +64,8 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 .top-text::before {
   content: "";
@@ -74,6 +76,7 @@ body {
 }
 
 .title {
+  font-family: "Raleway", Tahoma, sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
@@ -86,6 +89,20 @@ body {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.02em;
+}
+
+.registration-btn {
+  min-width: 160px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  background-color: transparent;
+  border: solid 1px #FF6C00;
+  border-radius: 25px;
 }
 
 .header {
@@ -126,8 +143,6 @@ body {
 
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
-  display: flex;
-  align-items: center;
 }
 
 .hero-title {
@@ -137,4 +152,24 @@ body {
 .hero-bottom-text {
   color: #9DA4BD;
   max-width: 306px;
+}
+
+.about {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.about-title {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */

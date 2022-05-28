@@ -5,6 +5,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
     &::before {
         content: "";
         height: 1px;
