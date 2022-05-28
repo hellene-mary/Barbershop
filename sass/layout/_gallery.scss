@@ -1,0 +1,15 @@
+.gallery{
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.gallery-top-text{
+    line-height: 1.9;
+    color: $top-text-color-dark;
+}
+
+.gallery-item{
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}

@@ -368,4 +368,18 @@ body {
   background-color: #FFFFFF;
   justify-content: center;
   align-items: center;
+}
+
+.gallery {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.gallery-top-text {
+  line-height: 1.9;
+  color: #303030;
+}
+
+.gallery-item:not(:last-child) {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
