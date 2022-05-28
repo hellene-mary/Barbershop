@@ -1,0 +1,80 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Open Sans", Tahoma, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+:root {
+  --color-accent: #FF6C00;
+  --title-text-color-dark: #303030;
+  --title-text-color-light: #FFFFFF;
+  --text-color-dark: #555555;
+  --text-color-light: #9DA4BD;
+}
+
+.container {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  outline: solid 1px red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+.header {
+  padding-top: 40px;
+  background-color: #191C26;
+}
+.header .container {
+  display: flex;
+}
+
+.logo-icon {
+  fill: #ffffff;
+}
+
+.menu-open-btn {
+  margin-left: 310px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.menu-open-btn-icon {
+  fill: #ffffff;
+}/*# sourceMappingURL=main.css.map */

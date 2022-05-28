@@ -7,28 +7,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./sass/main.css"/>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="">logo</a>
-            <button type="button">w</button>
+    <header class="header">
+        <div class="container">
+            <a class="logo-link" href="">
+                <svg class="logo-icon" width="66" height="65">
+                    <use href="./image/svg/symbol-defs.svg#icon-Logo"></use>
+                </svg>
+            </a>
+            <button class="menu-open-btn" type="button">
+                <svg class="menu-open-btn-icon" width="40" height="40">
+                    <use href="./image/svg/symbol-defs.svg#icon-mob-menu-btn"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
         <section class="hero">
-            <p class="hero-top-text" lang="en">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title" lang="en">BarberShop</h1>
-            <p class="hero-bottom-text">Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно, а головне, зі смаком.</p>
+            <div class="container">
+                <p class="hero-top-text" lang="en">A hair salon for men in Kyiv</p>
+                <h1 class="hero-title" lang="en">BarberShop</h1>
+                <p class="hero-bottom-text">Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно, а головне, зі смаком.</p>
+            </div>
         </section>
         <section class="about">
-            <p class="about-top-text">ПРО НАС</p>
-            <h2 class="about-title">Найкращий Барбершоп твого міста</h2>
-            <p class="about-bottom-text">Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас.</p>
-            <p>Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І коли ти потрапиш до руки нашого майстра, то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас приходить!</p>
-            <button type="button">онлайн-запись</button>
+            <div class="container">
+                <p class="about-top-text">ПРО НАС</p>
+                <h2 class="about-title">Найкращий Барбершоп твого міста</h2>
+                <p class="about-bottom-text">Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас.</p>
+                <p>Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І коли ти потрапиш до руки нашого майстра, то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас приходить!</p>
+                <button type="button">онлайн-запись</button>
+            </div>
+
         </section>
         <section class="prices">
             <p class="prices-top-text">Проведи час у компанії кращих майстрів</p>
