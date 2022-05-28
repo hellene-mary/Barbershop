@@ -49,7 +49,6 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
-  outline: solid 1px red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -79,7 +78,7 @@ body {
   font-family: "Raleway", Tahoma, sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
 }
@@ -91,7 +90,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.registration-btn {
+.btn {
   min-width: 160px;
   height: 40px;
   font-weight: 600;
@@ -99,10 +98,17 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #303030;
   background-color: transparent;
-  border: solid 1px #FF6C00;
   border-radius: 25px;
+  border: solid 1px #FF6C00;
+}
+.btn--light {
+  color: #303030;
+}
+.btn--dark {
+  margin: 0 auto;
+  display: block;
+  color: #FFFFFF;
 }
 
 .header {
@@ -114,7 +120,7 @@ body {
 }
 
 .logo-icon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .menu-open-btn {
@@ -124,7 +130,7 @@ body {
 }
 
 .menu-open-btn-icon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .hero {
@@ -172,4 +178,59 @@ body {
   color: #555555;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.prices {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #111319;
+  background-image: url(../../image/prices-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prices-top-text {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: #FFFFFF;
+  font-size: 42px;
+  line-height: 1.17;
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  padding: 30px;
+  margin-bottom: 50px;
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.prices-item::after {
+  content: "";
+  height: 1px;
+  width: 20px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin-left: 6px;
+  margin-right: 6px;
+  flex-grow: 1;
+}
+
+.prices-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+.prices-item-text:last-child {
+  order: 1;
 }/*# sourceMappingURL=main.css.map */
