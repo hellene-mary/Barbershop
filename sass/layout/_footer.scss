@@ -1,0 +1,40 @@
+.footer{
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+
+.footer-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &::before {
+        content: "";
+        height: 1px;
+        width: 60px;
+        background-color: currentColor;
+    }
+}
+
+.footer-item{
+    margin-left: 40px;
+}
+
+.footer-link{
+    text-transform: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+
+.footer-copy{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $text-color-light;
+}
