@@ -284,15 +284,29 @@
                     </li>
                 </ul>
             </div>
-
         </section>
-        <section>
+        <section class="registration">
             <div class="container">
-                <div class="registration">
-                    <h2 class="registration-title">Онлайн-запис</h2>
-                    <form action=""></form>
-                </div>
-                <div class="contacts">
+                <h2 class="registration-title title">Онлайн-запис</h2>
+                <form>
+                    <div class="regictration-field">
+                        <label class="registration-label" for="user-name"></label>
+                        <input class="registration-input" type="text" id="user-name" placeholder="ІМ'Я*">
+                    </div>
+                    <div class="regictration-field">
+                        <label class="registration-label" for="user-tel"></label>
+                        <input class="registration-input" type="tel" id="user-tel" placeholder="ТЕЛЕФОН*">
+                    </div>
+                    <div class="regictration-field">
+                        <label class="registration-label" for="user-tel">ПОВІДОМЛЕННЯ</label>
+                        <textarea class="registration-textarea" name="user-text" id="user-text"></textarea>
+                    </div>
+                    <button class="btn btn--dark" type="submit">Надіслати</button>
+                </form>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
                     <h2 class="contacts-title">Контакти</h2>
                     <ul>
                         <li>
@@ -307,7 +321,6 @@
                     </ul>
                     <p class="contacts-top-text">години роботи</p>
                     <p class="contacts-bottom-text">Щоденно з 9:00 до 22:00</p>
-                </div>
             </div>
         </section>
     </main>

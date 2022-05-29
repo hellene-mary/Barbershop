@@ -1,0 +1,69 @@
+.registration{
+    background-color: #191C26;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.registration-title{
+    font-size: 42px;
+    color: $color-light;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+
+.regictration-field{
+
+    &:not(:last-child){
+        margin-bottom: 44px;
+    }
+}
+
+.registration-label{
+    color: $registration-text-color;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.registration-input{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-light;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px $registration-text-color;
+    &::placeholder{
+        color: $registration-text-color;
+    }
+}
+
+.registration-textarea{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-light;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: solid 1px $registration-text-color;
+    resize: none;
+}
+
+
+
+
+
