@@ -23,6 +23,12 @@
 
 .hero-title{
     color: $color-light;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    @media screen and (min-width: 480){
+        font-size: 48px;
+    }
 }
 
 .hero-bottom-text{

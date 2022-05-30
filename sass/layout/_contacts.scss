@@ -10,15 +10,17 @@
 .contacts-title{
     margin-bottom: 40px;
     color: $color-light;
-    font-size: 42px;
     text-align: center;
 }
 
 .contacts-item{
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.67;
     &:not(:last-child){
         margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px){
+        font-size: 18px;
     }
 }
 .address{
@@ -86,7 +88,9 @@
 }
 
 .contacts-bottom-text{
-    font-size: 18px;
     line-height: 1.67;
     color: $text-color-light;
+    @media screen and (min-width: 480px){
+        font-size: 18px;
+    }
 }

@@ -5,7 +5,10 @@
 
 .about-title{
     font-size: 28px;
-    line-height: 33px;
+    line-height: 1.17;
+    // @media screen and (min-width: 768px){
+    //     font-size: px;
+    // }
 }
 
 .about-text{

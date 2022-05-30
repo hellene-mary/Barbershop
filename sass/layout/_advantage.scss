@@ -13,15 +13,18 @@
 }
 
 .advantage-bottom-text{
-    font-size: 18px;
     line-height: 1.67;
     color: $text-color-dark;
     margin-bottom: 44px;
+    @media screen and (min-width: 480px){
+        font-size: 18px;
+    }
 }
 
 .advantage-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .advantage-item{
@@ -37,14 +40,16 @@
     &:not(:last-child){
         margin-bottom: 30px;
     }
-    &:nth-child(odd){
-        margin-right: 30px;
-    }
-    &:nth-child(2){
-        margin-top: 35px;
-    }
-    &:nth-child(3){
-        margin-top: -35px;
+    @media screen and (min-width: 480px){
+        &:nth-child(odd){
+            margin-right: 30px;
+        }
+        &:nth-child(2){
+            margin-top: 35px;
+        }
+        &:nth-child(3){
+            margin-top: -35px;
+        }
     }
 }
 
