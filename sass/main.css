@@ -129,6 +129,7 @@ body {
   background-color: transparent;
   border-radius: 25px;
   border: solid 1px #FF6C00;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn--light {
   color: #303030;
@@ -146,7 +147,120 @@ body {
 .btn--dark:hover, .btn--dark:focus {
   background-color: #FF6C00;
   color: #FFFFFF;
-  cursor: url(../../image/cursor-light.png), pointer;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(25, 28, 38, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mob-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: #303030;
+  background-color: #F7F7F7;
+  width: 347px;
+  height: 100%;
+  padding: 30px 30px 30px 50px;
+}
+
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+}
+
+.close-btn-icon {
+  fill: #303030;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn-icon:hover, .close-btn-icon:focus {
+  fill: #FF6C00;
+}
+
+.mob-menu-nav-list {
+  margin-bottom: 64px;
+}
+
+.mob-menu-nav-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-menu-nav-item:hover, .mob-menu-nav-item:focus {
+  color: #FF6C00;
+  cursor: pointer;
+}
+
+.mob-menu-tel {
+  margin-bottom: 24px;
+  color: #303030;
+  text-decoration: none;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-tel:hover, .mob-menu-tel:focus {
+  color: #FF6C00;
+  cursor: pointer;
+}
+
+.mob-menu-soc-list {
+  margin-top: 64px;
+}
+
+.mob-menu-soc-item {
+  margin-left: 100px;
+  position: relative;
+}
+.mob-menu-soc-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-menu-soc-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  height: 1px;
+  width: 60px;
+  background-color: currentColor;
+}
+
+.mob-menu-soc-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-soc-link:hover, .mob-menu-soc-link:focus {
+  color: #FF6C00;
+  cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
 }
 
 .header {
@@ -161,15 +275,24 @@ body {
 
 .logo-icon {
   fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-icon:hover, .logo-icon:focus {
+  fill: #FF6C00;
 }
 
 .menu-open-btn {
   background-color: transparent;
   border-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-open-btn-icon {
   fill: #FFFFFF;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open-btn-icon:hover, .menu-open-btn-icon:focus {
+  fill: #FF6C00;
 }
 
 .hero {

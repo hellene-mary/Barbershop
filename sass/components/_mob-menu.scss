@@ -1,0 +1,113 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(25, 28, 38, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mob-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+    color: $top-text-color-dark;
+    background-color: $bg-color-light;
+    width: 347px;
+    height: 100%;
+    padding: 30px 30px 30px 50px;
+}
+
+.menu-close-btn{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+}
+
+.close-btn-icon{
+    fill: $top-text-color-dark;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        fill: $color-accent;
+    }
+}
+
+.mob-menu-nav-list{
+    margin-bottom: 64px;
+}
+
+.mob-menu-nav-item{
+    &:not(:last-child){
+        margin-bottom: 24px;
+    }
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+        cursor: pointer;
+    }
+}
+
+.mob-menu-tel{
+    margin-bottom: 24px;
+    color: $top-text-color-dark;
+    text-decoration: none;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+        cursor: pointer;
+    }
+}
+
+.mob-menu-soc-list {
+    margin-top: 64px;
+
+}
+
+.mob-menu-soc-item{
+    margin-left: 100px;
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 24px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -100px;
+            top: 50%;
+            height: 1px;
+            width: 60px;
+            background-color: currentColor;
+        }
+    }
+}
+
+.mob-menu-soc-link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $top-text-color-dark;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+        cursor: pointer;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: 0;
+    visibility: hidden;
+}
