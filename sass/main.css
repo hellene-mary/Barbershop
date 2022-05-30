@@ -112,16 +112,32 @@ body {
 .btn--light {
   color: #303030;
 }
+.btn--light:hover, .btn--light:focus {
+  background-color: #FF6C00;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 .btn--dark {
   margin: 0 auto;
   display: block;
   color: #FFFFFF;
 }
+.btn--dark:hover, .btn--dark:focus {
+  background-color: #FF6C00;
+  color: #FFFFFF;
+  cursor: url(../../image/cursor-light.png), pointer;
+}
 
 .header {
+  width: 100%;
   padding-top: 40px;
   position: absolute;
 }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo-icon {
   fill: #FFFFFF;
 }
@@ -365,6 +381,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.master-soc-link:hover .master-soc-logo, .master-soc-link:focus .master-soc-logo {
+  fill: #FF6C00;
+}
 
 .gallery {
   padding-top: 84px;
@@ -429,6 +448,19 @@ body {
 .registration-input::placeholder {
   color: rgba(157, 164, 189, 0.4);
 }
+.registration-input:hover, .registration-input:focus {
+  cursor: url(../../image/cursor-light.png), pointer;
+  border-color: #FFFFFF;
+}
+.registration-input:hover::-moz-placeholder, .registration-input:focus::-moz-placeholder {
+  color: #FFFFFF;
+}
+.registration-input:hover:-ms-input-placeholder, .registration-input:focus:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.registration-input:hover::placeholder, .registration-input:focus::placeholder {
+  color: #FFFFFF;
+}
 
 .registration-textarea {
   padding-bottom: 8px;
@@ -445,6 +477,10 @@ body {
   border: none;
   border-bottom: solid 1px rgba(157, 164, 189, 0.4);
   resize: none;
+}
+.registration-textarea:hover, .registration-textarea:focus {
+  cursor: url(../../image/cursor-light.png), pointer;
+  border-color: #FFFFFF;
 }
 
 .contacts {
@@ -466,24 +502,56 @@ body {
 .contacts-item {
   font-size: 18px;
   line-height: 1.67;
-  display: flex;
-  align-items: center;
 }
 .contacts-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.address, .contacts-tel {
+.address {
   color: #9DA4BD;
   text-decoration: none;
   font-style: normal;
-  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address:hover, .address:focus {
+  color: #FF6C00;
+  cursor: url(../../image/cursor-light.png), pointer;
+}
+.address:hover .contacts-icon-map, .address:focus .contacts-icon-map {
+  fill: currentColor;
+}
+
+.contacts-tel {
+  color: #9DA4BD;
+  text-decoration: none;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-tel:hover, .contacts-tel:focus {
+  color: #FF6C00;
+  cursor: url(../../image/cursor-light.png), pointer;
+}
+.contacts-tel:hover .contacts-icon-tel, .contacts-tel:focus .contacts-icon-tel {
+  fill: currentColor;
 }
 
 .contacts-mail {
   color: #9DA4BD;
   font-style: normal;
-  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-mail:hover, .contacts-mail:focus {
+  color: #FF6C00;
+  cursor: url(../../image/cursor-light.png), pointer;
+}
+.contacts-mail:hover .contacts-icon-mail, .contacts-mail:focus .contacts-icon-mail {
+  fill: currentColor;
 }
 
 .contacts-icon-map,
@@ -491,6 +559,7 @@ body {
 .contacts-icon-mail {
   width: 24px;
   height: 24px;
+  margin-right: 16px;
   background-color: transparent;
   fill: #9DA4BD;
 }
@@ -535,6 +604,10 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link:hover, .footer-link:focus {
+  color: #FF6C00;
 }
 
 .footer-copy {

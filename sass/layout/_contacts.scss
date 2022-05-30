@@ -17,31 +17,64 @@
 .contacts-item{
     font-size: 18px;
     line-height: 1.67;
-    display: flex;
-    align-items: center;
     &:not(:last-child){
         margin-bottom: 20px;
     }
 }
-.address, .contacts-tel {
+.address{
     color: $text-color-light;
     text-decoration: none;
     font-style: normal;
-    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+        cursor: url(../../image/cursor-light.png), pointer;
+        .contacts-icon-map{
+            fill: currentColor;
+        }
+    }
+}
+
+.contacts-tel{
+    color: $text-color-light;
+    text-decoration: none;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+        cursor: url(../../image/cursor-light.png), pointer;
+        .contacts-icon-tel{
+            fill: currentColor;
+        }
+    }
+
 }
 
 .contacts-mail{
     color: $text-color-light;
     font-style: normal;
-    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $color-accent;
+        cursor: url(../../image/cursor-light.png), pointer;
+        .contacts-icon-mail{
+            fill: currentColor;
+        }
+    }
 }
-
 
 .contacts-icon-map,
 .contacts-icon-tel, 
 .contacts-icon-mail{
     width: 24px;
     height: 24px;
+    margin-right: 16px;
     background-color: transparent;
     fill: $text-color-light;
 }

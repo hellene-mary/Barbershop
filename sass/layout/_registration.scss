@@ -43,6 +43,13 @@
     &::placeholder{
         color: $registration-text-color;
     }
+    &:hover, &:focus{
+        cursor: url(../../image/cursor-light.png), pointer;
+        border-color: $color-light;
+        &::placeholder{
+            color: $color-light;
+        }
+    }
 }
 
 .registration-textarea{
@@ -60,6 +67,10 @@
     border: none;
     border-bottom: solid 1px $registration-text-color;
     resize: none;
+    &:hover, &:focus{
+        cursor: url(../../image/cursor-light.png), pointer;
+        border-color: $color-light;
+    }
 }
 
 

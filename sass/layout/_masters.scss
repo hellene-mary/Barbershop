@@ -4,7 +4,6 @@
     background-color: $bg-color-light;
 }
 
-
 .masters-top-text{
     color: $top-text-color-dark;
 }
@@ -13,9 +12,6 @@
     font-size: 42px;
     color: $top-text-color-dark;
 }
-
-
-
 
 .masters-item{
     &:not(:last-child){
@@ -68,4 +64,9 @@
     background-color: $color-light;
     justify-content: center;
     align-items: center;
+    &:hover, &:focus{
+        .master-soc-logo{
+            fill: $color-accent;
+        }
+    }
 }

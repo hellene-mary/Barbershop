@@ -12,10 +12,20 @@
     border: solid 1px $color-accent;
     &--light{
         color: $top-text-color-dark;
+        &:hover, &:focus{
+            background-color: $color-accent;
+            color: $color-light;
+            cursor: pointer;
+        }
     }
     &--dark{
         margin: 0 auto;
         display: block;
         color: $color-light;
+        &:hover, &:focus{
+            background-color: $color-accent;
+            color: $color-light;
+            cursor: url(../../image/cursor-light.png), pointer;
+        }
     }
 }

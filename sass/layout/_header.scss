@@ -1,14 +1,12 @@
 
 .header{
+    width: 100%;
     padding-top: 40px;
     position: absolute;
     .container {
-        // display: flex;
+        display: flex;
+        justify-content: space-between;
     }
-}
-
-.logo-link{
-    
 }
 
 .logo-icon{
@@ -16,7 +14,6 @@
 }
 
 .menu-open-btn{
-    // margin-left: 310px;
     background-color: transparent;
     border-color: transparent;
 }
