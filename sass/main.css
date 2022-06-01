@@ -98,6 +98,11 @@ body {
     font-size: 11px;
   }
 }
+@media screen and (min-width: 768px) {
+  .top-text {
+    font-size: 11px;
+  }
+}
 
 .title {
   text-align: center;
@@ -636,14 +641,41 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
 .gallery-top-text {
   line-height: 1.9;
   color: #303030;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .gallery-item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item:not(:last-child) {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .gallery-item:nth-child(2) {
+    margin-bottom: 30px;
+  }
 }
 
 .registration {
@@ -877,7 +909,6 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-top-text {
     font-weight: 600;
-    font-size: 11px;
     color: rgba(157, 164, 189, 0.4);
     margin-top: 0;
   }
