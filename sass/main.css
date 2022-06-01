@@ -517,6 +517,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    margin-left: 240px;
+  }
+}
 
 .advantage-item {
   padding: 20px;
@@ -541,6 +546,12 @@ body {
   }
   .advantage-item:nth-child(3) {
     margin-top: -35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage-item {
+    width: 210px;
+    padding: 20px 44px;
   }
 }
 

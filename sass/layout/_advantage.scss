@@ -5,7 +5,6 @@
 
 .advantage-top-text{
     color: $top-text-color-dark;
-
 }
 
 .advantage-title{
@@ -25,6 +24,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (min-width: 768px){
+        margin-left: 240px;
+    }
 }
 
 .advantage-item{
@@ -50,6 +52,10 @@
         &:nth-child(3){
             margin-top: -35px;
         }
+    }
+    @media screen and (min-width: 768px){
+        width: 210px;
+        padding: 20px 44px;
     }
 }
 
