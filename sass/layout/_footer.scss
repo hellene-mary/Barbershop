@@ -1,8 +1,17 @@
 .footer{
     padding-top: 44px;
     padding-bottom: 44px;
+    @media screen and (min-width: 768px){
+        padding-top: 56px;
+        padding-bottom: 56px;
+        .container{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+    
 }
-
 
 .footer-list{
     display: flex;
@@ -14,6 +23,10 @@
         width: 60px;
         background-color: currentColor;
     }
+    @media screen and (min-width: 768px){
+        order: 1;
+    }
+
 }
 
 .footer-item{
@@ -33,7 +46,6 @@
     }
 }
 
-
 .footer-copy{
     margin-top: 20px;
     font-weight: 600;
@@ -41,4 +53,8 @@
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: $text-color-light;
+    @media screen and (min-width: 768px){
+        margin-top: 0;
+        margin-right: 40px;
+    }
 }
