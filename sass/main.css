@@ -98,11 +98,6 @@ body {
     font-size: 11px;
   }
 }
-@media screen and (min-width: 768px) {
-  .top-text {
-    font-size: 11px;
-  }
-}
 
 .title {
   text-align: center;
@@ -411,10 +406,50 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .about .container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-photo-list {
+    display: none;
+  }
+}
+
+.about-photo-item:not(:last-child) {
+  margin-bottom: 30px;
+  width: 330px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-box {
+    margin-left: 30px;
+  }
+}
+
+.about-top-text {
+  color: #303030;
+}
 
 .about-title {
   font-size: 28px;
   line-height: 1.17;
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+.about-bottom-text {
+  color: #555555;
 }
 
 .about-text {
