@@ -6,6 +6,11 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    @media screen and (min-width: 1200px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+        width: 620px;
+    }
 }
 
 .registration-title{
@@ -67,6 +72,9 @@
     @media screen and (min-width: 768px){
         width: 330px;
     }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    }
 }
 
 .registration-textarea{
@@ -90,6 +98,9 @@
     }
     @media screen and (min-width: 768px){
         width: 690px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 560px;
     }
 }
 

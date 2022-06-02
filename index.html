@@ -340,6 +340,8 @@
                 <ul class="gallery-list list">
                     <li class="gallery-item">
                         <picture> 
+                            <source media="(min-width: 1200px)" 
+                            srcset="./image/gallery1-desk.jpg 1x, ./image/gallery1-desk-2x.jpg 2x"> 
                             <source media="(min-width: 768px)" 
                             srcset="./image/gallery1-tab.jpg 1x, ./image/gallery1-tab-2x.jpg 2x"> 
                             <source media="(min-width: 320px)" 
@@ -349,6 +351,8 @@
                     </li>
                     <li class="gallery-item">
                         <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./image/gallery2-desk.jpg 1x, ./image/gallery2-desk-2x.jpg 2x"> 
                             <source media="(min-width: 768px)" 
                             srcset="./image/gallery2-tab.jpg 1x, ./image/gallery2-tab-2x.jpg 2x"> 
                             <source srcset="./image/gallery2-mob.jpg 1x, 
@@ -359,6 +363,8 @@
                     </li>
                     <li class="gallery-item">
                         <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./image/gallery3-desk.jpg 1x, ./image/gallery3-desk-2x.jpg 2x"> 
                             <source media="(min-width: 768px)" 
                             srcset="./image/gallery3-tab.jpg 1x, ./image/gallery3-tab-2x.jpg 2x"> 
                             <source srcset="./image/gallery3-mob.jpg 1x, 
@@ -369,6 +375,8 @@
                     </li>
                     <li class="gallery-item">
                         <picture>
+                            <source media="(min-width: 1200px)" 
+                            srcset="./image/gallery4-desk.jpg 1x, ./image/gallery4-desk-2x.jpg 2x"> 
                             <source media="(min-width: 768px)" 
                             srcset="./image/gallery4-tab.jpg 1x, ./image/gallery4-tab-2x.jpg 2x"> 
                             <source srcset="./image/gallery4-mob.jpg 1x, 
@@ -380,59 +388,61 @@
                 </ul>
             </div>
         </section>
-        <section class="registration">
-            <div class="container">
-                <h2 class="registration-title title">Онлайн-запис</h2>
-                <form class="registration-form">
-                    <div class="regictration-field">
-                        <label class="registration-label" for="user-name"></label>
-                        <input class="registration-input" type="text" id="user-name" placeholder="ІМ'Я*">
-                    </div>
-                    <div class="regictration-field">
-                        <label class="registration-label" for="user-tel"></label>
-                        <input class="registration-input" type="tel" id="user-tel" placeholder="ТЕЛЕФОН*">
-                    </div>
-                    <div class="regictration-field">
-                        <label class="registration-label" for="user-tel">ПОВІДОМЛЕННЯ</label>
-                        <textarea class="registration-textarea" name="user-text" id="user-text"></textarea>
-                    </div>
-                    <button class="btn btn--dark" type="submit">Надіслати</button>
-                </form>
-            </div>
-        </section>
-        <section class="contacts" id="contacts">
-            <div class="container">
-                    <h2 class="contacts-title title">Контакти</h2>
-                    <div class="contacts-box">
-                        <ul class="contacts-list list">
-                            <li class="contacts-item bottom-text">
-                                <address class="address">
-                                    <svg class="contacts-icon-map" widht="24" height="24">
-                                    <use href="./image/svg/symbol-defs.svg#icon-map-pin"></use>
-                                </svg>вул. Василькова, 7А, Київ, 08132</address>
-                            </li>
-                            <li class="contacts-item">
-                                <a class="contacts-tel" href="tel:+380441111111">
-                                    <svg class="contacts-icon-tel" widht="24" height="24">
-                                        <use href="./image/svg/symbol-defs.svg#icon-phone"></use>
-                                    </svg>+38 044 111 11 11</a>
-                            </li>
-                            <li class="contacts-item">
-                                <a class="contacts-mail" href="mailto:barbershop@email.com">
-                                    <svg class="contacts-icon-mail" widht="24" height="24">
-                                    <use href="./image/svg/symbol-defs.svg#icon-mail"></use>
-                                </svg>barbershop@email.com</a>
-                            </li>
-                        </ul>
-                        <!-- колір бефора -->
-                        <div>
-                            <p class="contacts-top-text top-text">години роботи</p>
-                            <p class="contacts-bottom-text bottom-text">Щоденно з 9:00 до 22:00</p>
+        <div class="registration-contacts">
+            <section class="registration">
+                <div class="container">
+                    <h2 class="registration-title title">Онлайн-запис</h2>
+                    <form class="registration-form">
+                        <div class="regictration-field">
+                            <label class="registration-label" for="user-name"></label>
+                            <input class="registration-input" type="text" id="user-name" placeholder="ІМ'Я*">
                         </div>
-                    </div>
+                        <div class="regictration-field">
+                            <label class="registration-label" for="user-tel"></label>
+                            <input class="registration-input" type="tel" id="user-tel" placeholder="ТЕЛЕФОН*">
+                        </div>
+                        <div class="regictration-field">
+                            <label class="registration-label" for="user-tel">ПОВІДОМЛЕННЯ</label>
+                            <textarea class="registration-textarea" name="user-text" id="user-text"></textarea>
+                        </div>
+                        <button class="btn btn--dark" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="container">
+                        <h2 class="contacts-title title">Контакти</h2>
+                        <div class="contacts-box">
+                            <ul class="contacts-list list">
+                                <li class="contacts-item bottom-text">
+                                    <address class="address">
+                                        <svg class="contacts-icon-map" widht="24" height="24">
+                                        <use href="./image/svg/symbol-defs.svg#icon-map-pin"></use>
+                                    </svg>вул. Василькова, 7А, Київ, 08132</address>
+                                </li>
+                                <li class="contacts-item">
+                                    <a class="contacts-tel" href="tel:+380441111111">
+                                        <svg class="contacts-icon-tel" widht="24" height="24">
+                                            <use href="./image/svg/symbol-defs.svg#icon-phone"></use>
+                                        </svg>+38 044 111 11 11</a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a class="contacts-mail" href="mailto:barbershop@email.com">
+                                        <svg class="contacts-icon-mail" widht="24" height="24">
+                                        <use href="./image/svg/symbol-defs.svg#icon-mail"></use>
+                                    </svg>barbershop@email.com</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <p class="contacts-top-text top-text">години роботи</p>
+                                <p class="contacts-bottom-text bottom-text">Щоденно з 9:00 до 22:00</p>
+                            </div>
+                        </div>
+    
+                </div>
+            </section>
+        </div>
 
-            </div>
-        </section>
     </main>
     <footer class="footer">
         <div class="container">
