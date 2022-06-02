@@ -100,7 +100,6 @@ body {
 }
 
 .title {
-  text-align: center;
   font-family: "Raleway", Tahoma, sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -285,6 +284,7 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-icon {
@@ -293,6 +293,11 @@ body {
 }
 .logo-icon:hover, .logo-icon:focus {
   fill: #FF6C00;
+}
+@media screen and (min-width: 768px) {
+  .logo-icon {
+    fill: #303030;
+  }
 }
 
 .menu-open-btn {
@@ -367,36 +372,86 @@ body {
   color: #FF6C00;
 }
 
-.hero {
+.hero .container {
+  padding: 0;
+  display: flex;
+}
+
+.hero-soc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero-soc {
+    display: flex;
+    width: 85px;
+    align-items: flex-end;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 40px;
+  }
+}
+
+.soc-list {
+  display: flex;
+  transform-origin: top left;
+  transform: rotate(-90deg) translate(-19px);
+  align-items: center;
+}
+.soc-list::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: currentColor;
+}
+
+.soc-item {
+  margin-left: 40px;
+}
+
+.soc-link {
+  text-transform: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-link:hover, .soc-link:focus {
+  color: #FF6C00;
+}
+
+.hero-content {
+  width: 100%;
+  padding: 208px 31px 183px 31px;
   background-color: #303030;
-  padding: 208px 10px 183px 10px;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
+  .hero-content {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-content {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-content {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero-content {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-desk.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-content {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-desk-2x.jpg);
   }
 }
@@ -407,8 +462,6 @@ body {
 
 .hero-title {
   color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
   font-size: 38px;
 }
 @media screen and (min-width: 480px) {
