@@ -8,10 +8,12 @@
     @media screen and (min-width: 768px){
         padding-top: 100px;
         padding-bottom: 100px;
-        background-color: #111319;
         background-image: url(../image/prices-bg-tab.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+    }
+    @media screen and (min-width: 1200px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+        background-image: url(../image/prices-bg-desk.png);
     }
 }
 
@@ -31,6 +33,14 @@
     @media screen and (min-width: 768px){
         padding: 30px 40px;
     }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 241px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .prices-item{
@@ -49,6 +59,14 @@
             margin-left: 6px;
             margin-right: 6px;
             flex-grow: 1;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 20px;
+        &:nth-child(4n){
+            margin-bottom: 0;
         }
     }
 }

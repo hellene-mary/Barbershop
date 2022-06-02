@@ -8,6 +8,10 @@
             display: flex;
         }
     }
+    @media screen and (min-width: 1200px){
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .about-photo-list{
