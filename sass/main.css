@@ -1004,7 +1004,7 @@ body {
   .registration {
     padding-top: 130px;
     padding-bottom: 130px;
-    width: 620px;
+    width: 605px;
   }
 }
 
@@ -1142,7 +1142,7 @@ body {
     background-image: url(../image/contacts-bg-desk.png);
     padding-top: 130px;
     padding-bottom: 130px;
-    width: 620px;
+    width: 565px;
   }
   .contacts .container {
     padding-left: 100px;
@@ -1273,6 +1273,9 @@ body {
 @media screen and (min-width: 1200px) {
   .registration-contacts {
     display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
