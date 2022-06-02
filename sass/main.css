@@ -868,6 +868,11 @@ body {
     padding: 100px 120px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .masters {
+    padding: 130px 0 130px 0;
+  }
+}
 
 .masters-top-text {
   color: #303030;
@@ -878,8 +883,20 @@ body {
   margin-bottom: 44px;
 }
 
+@media screen and (min-width: 1200px) {
+  .masters-list {
+    display: flex;
+  }
+}
+
 .masters-item:not(:last-child) {
   margin-bottom: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .masters-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .master-info {

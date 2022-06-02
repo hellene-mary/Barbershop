@@ -3,9 +3,10 @@
     padding-bottom: 84px;
     background-color: $bg-color-light;
     @media screen and (min-width: 768px){
-        // padding-top: 100px;
-        // padding-bottom: 100px;
         padding: 100px 120px;
+    }
+    @media screen and (min-width: 1200px){
+        padding: 130px 0 130px 0;
     }
 }
 
@@ -18,9 +19,19 @@
     margin-bottom: 44px;
 }
 
+.masters-list{
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+}
+
 .masters-item{
     &:not(:last-child){
         margin-bottom: 64px;
+        @media screen and (min-width: 1200px){
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
     }
 }
 
