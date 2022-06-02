@@ -14,21 +14,32 @@
     @media screen and (max-width: 767px){
         display: none;
     }
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
 }
 
 .about-photo-item{
-    &:not(:last-child){
+    width: 330px;
+        &:not(:last-child){
         margin-bottom: 30px;
-        width: 330px;
+        @media screen and (min-width: 1200px){
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
     }
 }
 
 .about-box{
     @media screen and (min-width: 768px){
         margin-left: 30px;
-        // max-width: 330px;
-        // display: flex;
-
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: 64px;
+        width: 500px;
     }
 }
 
@@ -37,12 +48,9 @@
 }
 
 .about-title{
-    font-size: 28px;
-    line-height: 1.17;
-    @media screen and (min-width: 768px){
-        font-size: 28px;
-        line-height: 1.18;
-    }
+    color: $top-text-color-dark;
+    font-size: 40px;
+    letter-spacing: 0.03em;
 }
 
 .about-bottom-text{

@@ -15,6 +15,10 @@
         padding-right: 64px;
         padding-bottom: 40px;
     }
+    @media screen and (min-width: 1200px){
+        padding-left: 40px;
+        padding-right: 54px;
+    }
 }
 
 .soc-list{
@@ -74,6 +78,7 @@
         }
     }
     @media screen and (min-width: 1200px){
+        padding: 272px 0 206px 96px;
         background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../image/hero-bg-desk.jpg);
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
