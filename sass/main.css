@@ -192,6 +192,7 @@ body {
 }
 
 .mob-menu {
+  overflow-y: auto;
   position: absolute;
   top: 0;
   right: 0;
